@@ -16,210 +16,82 @@
 		var myArray = []
 		//Crearé la condición para generar los números aleatorios, en este caso quiero que tome los números del 1 al 100, por eso hago uso de math ceil por el math random multiplicado por 100
 		while(myArray.length < cantidadNumeros ){
-  		var numeroAleatorio = Math.ceil(Math.random()*100);
-  		//Esta condición es para evitar que se repitan los números
-  	var existe = false;
-  	//Llenar los datos de array
-  	for(var i=0;i<myArray.length;i++){
-		if(myArray [i] == numeroAleatorio){
-        existe = true;
-        break;
-  	  }
-  	}
-  	if(!existe){
-    myArray[myArray.length] = numeroAleatorio;
-  	}
+  			var numeroAleatorio = Math.ceil(Math.random()*100);
+  			//Esta condición es para evitar que se repitan los números
+  			var existe = false;
+  			//Llenar los datos de array
+  		for(var i=0;i<myArray.length;i++){
+			if(myArray [i] == numeroAleatorio){
+        	existe = true;
+       	 	break;
+  	  		}
+  		}
+  		if(!existe){
+    		myArray[myArray.length] = numeroAleatorio;
+  			}
 
-	}
-	//Mostrar los datos en pantalla de los números aleatorios
-	document.write("números aleatorios : " + myArray);
-	//Hacer la suma de los números aleatorios
-	for(var i=0;i<myArray.length;i++){
-		suma+=myArray[i];
-	}
-	document.write("<br>la suma es:  "+ suma);
-	i=0;
-	//multiplicar los números pares y sumar los impares
-	while (i<20) {
-		if (myArray[i]%2==0) { mult=mult*myArray[i];
+		}
+		//Mostrar los datos en pantalla de los números aleatorios
+		document.write("números aleatorios : " + myArray);
+		//Hacer la suma de los números aleatorios
+		for(var i=0;i<myArray.length;i++){
+			suma+=myArray[i];
+		}
+		document.write("<br>la suma es:  "+ suma);
+		i=0;
+		//multiplicar los números pares y sumar los impares
+		while (i<20) {
+			if (myArray[i]%2==0) { mult=mult*myArray[i];
 
-		}else { sumaimpar=myArray[i]+sumaimpar
+			}else { sumaimpar=myArray[i]+sumaimpar
 			
-		}
-		i++
+			}
+			i++
 
-	}
-	document.write("<br>La multiplicación de los números pares es: "+mult);
-	document.write("<br> La suma de los impares es: "+ sumaimpar);
-
-	//comprobar si los números en los arreglos son primos
-	document.write("<br>Los números primos son");
-	document.write("<br>************************************")
-	for(var i = 0; i < 20; i++){
-		if (myArray[i]==2   ) {
-			document.writeln("<br>"+myArray[i])
-			// statement
 		}
-		
-	}
-		for(var i = 0; i < 20; i++){
-		if (myArray[i]==3   ) {
-			document.writeln("<br>"+myArray[i])
-			// statement
-		}
-		
-	}
-		for(var i = 0; i < 20; i++){
-		if (myArray[i]==5  ) {
-			document.writeln("<br>"+myArray[i])
-			// statement
-		}
-		
-	}
-		for(var i = 0; i < 20; i++){
-		if (myArray[i]==7   ) {
-			document.writeln("<br>"+myArray[i])
-			// statement
-		}
-		
-	}
-		for(var i = 0; i < 20; i++){
-		if (myArray[i]==13   ) {
-			document.writeln("<br>"+myArray[i])
-			// statement
-		}
-		
-	}
-		for(var i = 0; i < 20; i++){
-		if (myArray[i]==17  ) {
-			document.writeln("<br>"+myArray[i])
-			// statement
-		}
-		
-	}
-		for(var i = 0; i < 20; i++){
-		if (myArray[i]==19  ) {
-			document.writeln("<br>"+myArray[i])
-			// statement
-		}
-		
-	}
-		for(var i = 0; i < 23; i++){
-		if (myArray[i]==23   ) {
-			document.writeln("<br>"+myArray[i])
-			// statement
-		}
-		
-	}
-		for(var i = 0; i < 20; i++){
-		if (myArray[i]==29   ) {
-			document.writeln("<br>"+myArray[i])
-			// statement
-		}
-		
-	}
-		for(var i = 0; i < 20; i++){
-		if (myArray[i]==31   ) {
-			document.writeln("<br>"+myArray[i])
-			// statement
-		}
-		
-	}
-		for(var i = 0; i < 20; i++){
-		if (myArray[i]==37   ) {
-			document.writeln("<br>"+myArray[i])
-			// statement
-		}
-		
-	}
-		for(var i = 0; i < 20; i++){
-		if (myArray[i]==41   ) {
-			document.writeln("<br>"+myArray[i])
-			// statement
-		}
-		
-	}	for(var i = 0; i < 20; i++){
-		if (myArray[i]==43   ) {
-			document.writeln("<br>"+myArray[i])
-			// statement
-		}
-		
-	}	for(var i = 0; i < 20; i++){
-		if (myArray[i]==47   ) {
-			document.writeln("<br>"+myArray[i])
-			// statement
-		}
-		
-	}
-		for(var i = 0; i < 20; i++){
-		if (myArray[i]==59   ) {
-			document.writeln("<br>"+myArray[i])
-			// statement
-		}
-		
-	}	for(var i = 0; i < 20; i++){
-		if (myArray[i]==53   ) {
-			document.writeln("<br>"+myArray[i])
-			// statement
-		}
-		
-	}
-		for(var i = 0; i < 20; i++){
-		if (myArray[i]==61   ) {
-			document.writeln("<br>"+myArray[i])
-			// statement
-		}
-		
-	}	for(var i = 0; i < 20; i++){
-		if (myArray[i]==67   ) {
-			document.writeln("<br>"+myArray[i])
-			// statement
-		}
-		
-	}	for(var i = 0; i < 20; i++){
-		if (myArray[i]==71   ) {
-			document.writeln("<br>"+myArray[i])
-			// statement
-		}
-		
-	}
-		for(var i = 0; i < 20; i++){
-		if (myArray[i]==73   ) {
-			document.writeln("<br>"+myArray[i])
-			// statement
-		}
-		
-	}	for(var i = 0; i < 20; i++){
-		if (myArray[i]==79   ) {
-			document.writeln("<br>"+myArray[i])
-			// statement
-		}
-		
-	}	for(var i = 0; i < 20; i++){
-		if (myArray[i]==83   ) {
-			document.writeln("<br>"+myArray[i])
-			// statement
-		}
-		
-	}
-		for(var i = 0; i < 20; i++){
-		if (myArray[i]==89   ) {
-			document.writeln("<br>"+myArray[i])
-			// statement
-		}
-		
-	}
-		for(var i = 0; i < 20; i++){
-		if (myArray[i]==97   ) {
-			document.writeln("<br>"+myArray[i])
-			// statement
-		}
-		
-	}
-	document.write("<br>************************************")
-	//Los números no primos
-
-
+		document.write("<br>La multiplicación de los números pares es: "+mult);
+		document.write("<br> La suma de los impares es: "+ sumaimpar);
+		//comprobar si los números en los arreglos son primos
+		document.write("<br>Los números primos son");
+		document.write("<br>**********************************")
+	
+		//Para saber los números primos hice un for que divida todos los números hasta antes del 1, si el residuo es cero hace la suma al contador de números primo (p). luego se hace la condición en donde se especifica si el contador es igual a 1 es primo, en este caso no usé 2 porque no va a dividir antes del número 1.
+		for (i = 0; i < 20; i++) {
+        	    j = 2;
+            	p = 1;
+            	while (j < myArray[i]) {
+                	if (myArray[i] % j == 0) {
+                    	p = 0;
+                    	break;
+                	}
+                	j++;
+            	}
+            	if (p == 1) {
+                	document.write("<br>" + myArray[i]);
+            	}
+            
+        	}
+        	//saber los números no primos, es lo mismo solo que manda al else el resultado obtenido
+        	document.write("<br>Los números no primos son")
+        	document.write("<br>************************************");
+        	for (i = 0; i < 20; i++) {
+            	j = 2;
+            	p = 1;
+            	while (j < myArray[i]) {
+                	if (myArray[i] % j == 0) {
+                    	p = 0;
+                    	break;
+                	}
+                	j++;
+            	}
+            	if (p == 1) {
+                
+            	}else {
+            		document.write("<br>"+myArray[i])
+            	}
+            
+        	}
+        	document.write("<br>*********************************")
 	
 	</script>
 </head>
